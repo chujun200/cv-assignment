@@ -5,6 +5,7 @@ void main()
 {
 	// 【1】读入一张图片，载入图像
 	Mat srcImage = imread("image.jpg");
+	Mat srcImage2 = imread("image.jpg",0);
 	int height = srcImage.rows;
 	int width = srcImage.cols;
 	
@@ -19,8 +20,8 @@ void main()
 			srcImage.at<Vec3b>(j, i)[2] = average;
 		}
 	}
-	// 【3】展示图片
+	// 【3】展示图片	 【4】等待任意按键按下
 	imshow("【平均像素图】", srcImage);
-	// 【4】等待任意按键按下
+	imshow("【灰度图】", srcImage2);
 	waitKey(0);
 }
