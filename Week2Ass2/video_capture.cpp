@@ -35,7 +35,7 @@ int main()
 		else
 		{
 			imshow("frame", frame);
-			if (waitKey(30) == 27) {  //When key¡®Esc¡¯pressed£¬ exit.
+			if (waitKey(30) == 27) {  //When key: 'Esc'pressed, exit.
 				destroyAllWindows();
 				return 0;
 			}

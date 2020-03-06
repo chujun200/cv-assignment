@@ -56,7 +56,7 @@ int main() {
 	imshow("Histogram", dstImage);
 
 	while (true) {
-		if (waitKey(30) == 27) {  //When key¡®Esc¡¯pressed£¬ exit.
+		if (waitKey(30) == 27) {  //When key: 'Esc'pressed, exit.
 			destroyAllWindows();
 			return 0;
 		}

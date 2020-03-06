@@ -14,7 +14,7 @@ int main() {
 	imshow("Red", channels.at(2));
 
 	while (true) {
-		if (waitKey(30) == 27) {  //When key¡®Esc¡¯pressed£¬ exit.
+		if (waitKey(30) == 27) {  //When key: 'Esc'pressed, exit.
 			destroyAllWindows();
 			return 0;
 		}
