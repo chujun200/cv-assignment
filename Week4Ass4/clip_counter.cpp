@@ -20,7 +20,7 @@ int main()
 
 
 	int count = 0;  //define counter to cross inappropriate noise 
-	// Drew bounding box
+	// Draw bounding box
 	for (int i = 1; i < nComp; i++)
 	{
 		if ((statsMat.at <int>(i, 2) < 50) or (statsMat.at <int>(i, 3) < 50))
@@ -34,7 +34,7 @@ int main()
 		bbx.height = statsMat.at<int>(i, 3);
 		rectangle(binaryMat, bbx, CV_RGB(255, 255, 255), 1, 8, 0);
 
-		//printf some imformation
+		//printf some information
 		cout << "connected Components NO. " << count << endl;
 		cout << "pixels = " << statsMat.at<int>(i, 4) << endl;
 		cout << "width = " << statsMat.at<int>(i, 2) << endl;

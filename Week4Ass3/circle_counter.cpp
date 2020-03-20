@@ -17,7 +17,7 @@ int main()
 
 	int nComp = connectedComponentsWithStats(binaryMat, labelMat, statsMat, centrMat, 8, CV_32S);
 
-	//printf some imformation
+	//printf some information
 	for (int i = 0; i < nComp; i++)
 	{
 		cout << "connected Components NO. " << i << endl;
@@ -28,7 +28,7 @@ int main()
 	}
 	cout << "the total of connected Components = " << nComp - 1 << endl;  //exclude background
 
-	// Drew bounding box
+	// Draw bounding box
 	for (int i = 1; i < nComp; i++)
 	{
 		Rect bbx;
